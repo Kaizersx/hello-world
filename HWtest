@@ -1,0 +1,28 @@
+public class IntSquare {
+    // закрытый атрибут
+    private int squareValue;
+
+    // открытый интерфейс
+    private int getSquare(int value) {
+        squareValue = calculateSquare(value);
+        return squareValue;
+    }
+
+    // закрытая реализация
+    private int calculateSquare(int value) {
+        return value * value;
+    }
+
+
+    public static void main(String[] Args) {
+
+        int x=22;
+
+        IntSquare sq= new IntSquare();
+
+        sq.getSquare(x);
+
+    }
+
+
+}
